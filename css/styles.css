@@ -4,8 +4,27 @@
 
 * {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Work Sans', sans-serif;
-  color: #D3D3D3;
 }
+
+body {
+  color: #a8a8a8;
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+a {
+  color: #3a3a3a;
+  text-decoration: none;
+}
+
+/* =================================
+  			Base Layout Styles
+==================================== */
