@@ -66,6 +66,8 @@ img {
   padding: 1em;
 }
 
+
+
 /* --- Layout Containers --- */
 
 .container {
@@ -85,8 +87,8 @@ img {
 }
 
 .mainNav {
-  width: 90%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 0;
 }
 
 #portfolio {
@@ -145,4 +147,28 @@ img {
 
 .footerNav {
   display: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+a.trans {
+  padding: 5px 10px;
+  background: #9c3;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+a.trans:hover,
+a.trans:focus {
+  background: #690;
 }
