@@ -61,6 +61,12 @@ footer {
   align-items: center;
 }
 
+.main-name {
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
 .main-nav {
   background-color: #F5F5F5;
   width: 70%;
@@ -77,10 +83,11 @@ footer {
 .main-nav ul li  {
   padding: .5em;
   margin: .5em;
+  font-weight: bold;
 }
 
 .main-nav ul li a:hover {
-  background-color: #F0F8FF;
+  background-color: #F0FFFF;
   padding: 12px;
   border: 1px solid #DCDCDC;
   border-radius: 28px;
@@ -94,6 +101,11 @@ footer {
   border-radius: 20px;
 }
 
+#portfolio {
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-weight: bold;
+}
+
 p,
 img {
   padding: 1em;
@@ -104,4 +116,53 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.contact-info {
+  font-family: 'Encode Sans Expanded', sans-serif;
+  color: #7B68EE;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* =================================
+  			Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+  .main-name,
+  .main-nav {
+    display: flex;
+  }
+
+  .main-name {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .main-nav{
+    flex-direction: row;
+    justify-content: center;
+  }
+  .main-nav ul {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .main-nav ul li a {
+    justify-content: center;
+  }
+
+  .my-name {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (min-width: 1024px) {
+
 }
