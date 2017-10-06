@@ -82,16 +82,16 @@ footer {
 }
 
 .main-nav ul li  {
-  padding: .5em;
-  margin: .5em;
+  padding: 10px;
+  margin: 0 auto;
   font-weight: bold;
 }
 
 .main-nav ul li a:hover {
   background-color: #F0FFFF;
-  padding: 12px;
-  border: 1px solid #DCDCDC;
-  border-radius: 28px;
+  padding: 14px;
+  /*border: 1px solid #DCDCDC;*/
+  border-radius: 14px;
 }
 
 .my-img {
@@ -162,6 +162,7 @@ img {
   .my-name {
     display: flex;
     flex-direction: row-reverse;
+    flex-grow: 1;
   }
 }
 @media screen and (min-width: 1024px) {
