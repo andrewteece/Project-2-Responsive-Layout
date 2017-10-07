@@ -43,7 +43,7 @@ img {
   max-width: 100%;
 }
 
-/*div,
+div,
 header,
 h1,
 h2,
@@ -53,7 +53,7 @@ img,
 p,
 footer {
   border: 1px solid black;
-}*/
+}
 
 .main-header {
   display: flex;
@@ -97,7 +97,7 @@ footer {
 .my-img {
   display: block;
   margin: 0 auto;
-  padding: 1em;
+  padding: 10px;
   width: 70%;
   border-radius: 20px;
 }
@@ -117,6 +117,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #F5F5F5;
 }
 
 .contact-info {
@@ -137,7 +138,8 @@ img {
 
 @media (min-width: 768px) {
   .main-name,
-  .main-nav {
+  .main-nav,
+  /*.main-container*/ {
     display: flex;
   }
 
@@ -164,10 +166,36 @@ img {
     flex-direction: row-reverse;
     flex-grow: 1;
   }
-}
+
+  .main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-content: center;
+  }
+
+  .item-1,
+  .item-2 {
+    flex: 1 45%;
+  }
+
+  .item-3,
+  .item-4 {
+    flex: 1 45%;
+  }
+
+  .item-5,
+  .item-6 {
+    flex: 1 45%;
+  }
+
+
+
+
 @media screen and (min-width: 1024px) {
   .main-header {
     flex-direction: row;
-     justify-content: space-between;
+    justify-content: space-between;
   }
 }
